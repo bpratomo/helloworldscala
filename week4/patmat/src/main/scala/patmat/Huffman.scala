@@ -192,12 +192,16 @@ trait Huffman extends HuffmanInterface:
    * the resulting list of characters.
    */
   def decode(tree: CodeTree, bits: List[Bit]): List[Char] = 
-    (bits.head, tree) match {
-      case (0,Fork(l,r,c,w)) => decode(l,bits.tail) 
-      case (1,Fork(l,r,c,w)) => decode(r,bits.tail)
-      case (_,Leaf(c,w)) => c :: decode(tree,bits)
-      case (_,_) => Nil
-    }
+    val root = tree
+    def iter(tree:CodeTree,bits:List[Bit]):List[Char] = 
+      if bits.isEmpty then Nil else 
+        (bits.head, tree) match {
+          case (0,Fork(l,r,c,w)) => iter(l,bits) 
+          case (1,Fork(l,r,c,w)) => iter(r,bits)
+          case (_,Leaf(c,w)) => c :: iter(root,bits.tail)
+          case (_,_) => Nil
+        }
+    iter(root,bits)
   /**
    * A Huffman coding tree for the French language.
    * Generated from the data given at
@@ -230,12 +234,12 @@ trait Huffman extends HuffmanInterface:
         tree match {
           case Leaf(c,w) => if c == text.head then traverse(root)(text.tail) else Nil
           case Fork(l,r,c,w) => (l,r) match {
-            case (Fork(left,right,charlist,weight),_) if charlist.contains(text.head) => 0::traverse(Fork(left,right,charlist,weight))(text)
-            case (_,Fork(left,right,charlist,weight)) if charlist.contains(text.head) => 1::traverse(Fork(left,right,charlist,weight))(text)
+            case (Fork(left,right,charlist,weight),_) if charlist.contains(text.head) =>  0::traverse(Fork(left,right,charlist,weight))(text)
+            case (_,Fork(left,right,charlist,weight)) if charlist.contains(text.head) =>  1::traverse(Fork(left,right,charlist,weight))(text)
 
             case (Leaf(char,weight),_) if char == text.head => 0::traverse(root)(text.tail)
             case (_,Leaf(char,weight)) if char == text.head => 1::traverse(root)(text.tail)
-            case (_,_) => Nil
+            case (_,_) => println("path 6");Nil
           }
     }
     traverse(root)(text)
