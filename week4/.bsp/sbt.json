@@ -1,0 +1,1 @@
+{"name":"sbt","version":"1.6.2","bspVersion":"2.0.0-M5","languages":["scala"],"argv":["/home/gitpod/.sdkman/candidates/java/11.0.13.fx-zulu/bin/java","-Xms100m","-Xmx100m","-classpath","/home/linuxbrew/.linuxbrew/Cellar/sbt/1.6.2/libexec/bin/sbt-launch.jar","-Dsbt.script=/home/linuxbrew/.linuxbrew/Cellar/sbt/1.6.2/libexec/bin/sbt","xsbt.boot.Boot","-bsp"]}
