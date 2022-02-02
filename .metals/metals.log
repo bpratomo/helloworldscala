@@ -946,3 +946,220 @@ java.lang.RuntimeException: The server did not start, got FailedToOpenBspConnect
 2022.02.02 08:09:06 INFO  time: indexed workspace in 5.8s
 Feb 02, 2022 8:13:55 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+2022.02.02 08:28:49 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /workspace/helloworldscala/.metals/lsp.trace.json or /home/gitpod/.cache/metals/lsp.trace.json
+2022.02.02 08:28:49 INFO  logging to file /workspace/helloworldscala/.metals/metals.log
+2022.02.02 08:28:49 INFO  Started: Metals version 0.11.1 in workspace '/workspace/helloworldscala' for client Gitpod Code 1.63.2.
+2022.02.02 08:28:49 INFO  Parse release: 11.0.13
+2022.02.02 08:28:53 INFO  time: initialize in 3.32s
+2022.02.02 08:28:54 INFO  Attempting to connect to the build server...
+2022.02.02 08:29:01 ERROR Starting the bsp launcher for bloop...
+2022.02.02 08:29:01 ERROR Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher7946654719436040507/bsp.socket'...
+2022.02.02 08:29:01 ERROR Waiting for the bsp connection to come up...
+2022.02.02 08:29:01 ERROR Waiting for the bsp connection to come up...
+2022.02.02 08:29:01 ERROR Waiting for the bsp connection to come up...
+2022.02.02 08:29:01 ERROR Waiting for the bsp connection to come up...
+2022.02.02 08:29:01 ERROR Waiting for the bsp connection to come up...
+2022.02.02 08:29:01 ERROR Waiting for the bsp connection to come up...
+2022.02.02 08:29:01 ERROR error: The command bsp --protocol local --socket /tmp/bsp-launcher7946654719436040507/bsp.socket returned with an error
+2022.02.02 08:29:01 ERROR > No server running at 127.0.0.1:8212, let's fire one...
+2022.02.02 08:29:01 ERROR > Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.12...
+2022.02.02 08:29:01 ERROR > Starting bloop server at 127.0.0.1:8212...
+2022.02.02 08:29:01 ERROR > Attempting a connection to the server...
+2022.02.02 08:29:01 ERROR > Attempting a connection to the server...
+2022.02.02 08:29:01 ERROR > Attempting a connection to the server...
+2022.02.02 08:29:01 ERROR > Attempting a connection to the server...
+2022.02.02 08:29:01 ERROR > Attempting a connection to the server...
+2022.02.02 08:29:01 ERROR > [0m[32m[D][0m Loading workspace settings from bloop.settings.json
+2022.02.02 08:29:01 ERROR > [0m[32m[D][0m Loading 2 projects from '/workspace/helloworldscala/.bloop'...
+2022.02.02 08:29:01 ERROR > [0m[32m[D][0m Loading project from '/workspace/helloworldscala/.bloop/helloworldscala-test.json'
+2022.02.02 08:29:01 ERROR > [0m[32m[D][0m Loading project from '/workspace/helloworldscala/.bloop/helloworldscala.json'
+2022.02.02 08:29:01 ERROR > [0m[33m[W][0m Scala instance jar /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.jar doesn't exist!
+2022.02.02 08:29:01 ERROR > [0m[33m[W][0m Scala instance jar /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.jar doesn't exist!
+2022.02.02 08:29:01 ERROR > [0m[33m[W][0m Scala instance jar /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.3/scala-compiler-2.13.3.jar doesn't exist!
+2022.02.02 08:29:01 ERROR > [0m[33m[W][0m Scala instance jar /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.3/scala-compiler-2.13.3.jar doesn't exist!
+2022.02.02 08:29:01 ERROR > [0m[33m[W][0m Scala instance jar /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.3/scala-reflect-2.13.3.jar doesn't exist!
+2022.02.02 08:29:01 ERROR > [0m[33m[W][0m Scala instance jar /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.3/scala-reflect-2.13.3.jar doesn't exist!
+2022.02.02 08:29:01 ERROR > [0m[33m[W][0m Scala instance jar /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.15.0/jline-3.15.0.jar doesn't exist!
+2022.02.02 08:29:01 ERROR > [0m[33m[W][0m Scala instance jar /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.15.0/jline-3.15.0.jar doesn't exist!
+2022.02.02 08:29:01 ERROR > [0m[33m[W][0m Scala instance jar /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar doesn't exist!
+2022.02.02 08:29:01 ERROR > [0m[33m[W][0m Scala instance jar /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar doesn't exist!
+2022.02.02 08:29:01 ERROR > [0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.13.3.
+2022.02.02 08:29:01 ERROR > [0m[32m[D][0m   => /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar
+2022.02.02 08:29:01 ERROR > [0m[32m[D][0m   => /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.15.0/jline-3.15.0.jar
+2022.02.02 08:29:01 ERROR > [0m[32m[D][0m   => /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.3/scala-compiler-2.13.3.jar
+2022.02.02 08:29:01 ERROR > [0m[32m[D][0m   => /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.jar
+2022.02.02 08:29:01 ERROR > [0m[32m[D][0m   => /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.3/scala-reflect-2.13.3.jar
+2022.02.02 08:29:01 ERROR > [0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.13.3.
+2022.02.02 08:29:01 ERROR > [0m[32m[D][0m   => /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar
+2022.02.02 08:29:01 ERROR > [0m[32m[D][0m   => /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.15.0/jline-3.15.0.jar
+2022.02.02 08:29:01 ERROR > [0m[32m[D][0m   => /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.3/scala-compiler-2.13.3.jar
+2022.02.02 08:29:01 ERROR > [0m[32m[D][0m   => /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.jar
+2022.02.02 08:29:01 ERROR > [0m[32m[D][0m   => /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.3/scala-reflect-2.13.3.jar
+2022.02.02 08:29:01 ERROR > bloop.data.Project$ProjectReadException: Failed to load project from /workspace/helloworldscala/.bloop/helloworldscala-test.json
+2022.02.02 08:29:01 ERROR > 	at bloop.data.Project$.fromBytesAndOrigin(Project.scala:280)
+2022.02.02 08:29:01 ERROR > 	at bloop.engine.BuildLoader$.loadProject(BuildLoader.scala:256)
+2022.02.02 08:29:01 ERROR > 	at bloop.engine.BuildLoader$.$anonfun$loadBuildIncrementally$3(BuildLoader.scala:60)
+2022.02.02 08:29:01 ERROR > 	at monix.eval.internal.TaskRunLoop$.monix$eval$internal$TaskRunLoop$$loop$1(TaskRunLoop.scala:187)
+2022.02.02 08:29:01 ERROR > 	at monix.eval.internal.TaskRunLoop$RestartCallback$1.onSuccess(TaskRunLoop.scala:119)
+2022.02.02 08:29:01 ERROR > 	at monix.eval.Task$.$anonfun$forkedUnit$2(Task.scala:1463)
+2022.02.02 08:29:01 ERROR > 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+2022.02.02 08:29:01 ERROR > 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+2022.02.02 08:29:01 ERROR > 	at java.base/java.lang.Thread.run(Thread.java:829)
+2022.02.02 08:29:01 ERROR > Caused by: java.nio.file.NoSuchFileException: /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.jar
+2022.02.02 08:29:01 ERROR > 	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+2022.02.02 08:29:01 ERROR > 	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+2022.02.02 08:29:01 ERROR > 	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+2022.02.02 08:29:01 ERROR > 	at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+2022.02.02 08:29:01 ERROR > 	at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:149)
+2022.02.02 08:29:01 ERROR > 	at java.base/sun.nio.fs.LinuxFileSystemProvider.readAttributes(LinuxFileSystemProvider.java:99)
+2022.02.02 08:29:01 ERROR > 	at java.base/java.nio.file.Files.readAttributes(Files.java:1764)
+2022.02.02 08:29:01 ERROR > 	at bloop.ScalaInstance.$anonfun$hashCode$1(ScalaInstance.scala:82)
+2022.02.02 08:29:01 ERROR > 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:286)
+2022.02.02 08:29:01 ERROR > 	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+2022.02.02 08:29:01 ERROR > 	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+2022.02.02 08:29:01 ERROR > 	at scala.collection.mutable.WrappedArray.foreach(WrappedArray.scala:38)
+2022.02.02 08:29:01 ERROR > 	at scala.collection.TraversableLike.map(TraversableLike.scala:286)
+2022.02.02 08:29:01 ERROR > 	at scala.collection.TraversableLike.map$(TraversableLike.scala:279)
+2022.02.02 08:29:01 ERROR > 	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
+2022.02.02 08:29:01 ERROR > 	at bloop.ScalaInstance.<init>(ScalaInstance.scala:78)
+2022.02.02 08:29:01 ERROR > 	at bloop.ScalaInstance$.newInstance$1(ScalaInstance.scala:152)
+2022.02.02 08:29:01 ERROR > 	at bloop.ScalaInstance$.$anonfun$apply$7(ScalaInstance.scala:157)
+2022.02.02 08:29:01 ERROR > 	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1705)
+2022.02.02 08:29:01 ERROR > 	at bloop.ScalaInstance$.apply(ScalaInstance.scala:157)
+2022.02.02 08:29:01 ERROR > 	at bloop.data.Project$.$anonfun$fromConfig$1(Project.scala:297)
+2022.02.02 08:29:01 ERROR > 	at scala.Option.flatMap(Option.scala:271)
+2022.02.02 08:29:01 ERROR > 	at bloop.data.Project$.fromConfig(Project.scala:292)
+2022.02.02 08:29:01 ERROR > 	at bloop.data.Project$.fromBytesAndOrigin(Project.scala:274)
+2022.02.02 08:29:01 ERROR > 	... 8 more
+2022.02.02 08:29:01 ERROR > [0m[32m[D][0m Elapsed: 161.895116 ms
+2022.02.02 08:29:01 ERROR > [0m[31m[E][0m Failed to load project from /workspace/helloworldscala/.bloop/helloworldscala.json
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m bloop.data.Project$ProjectReadException: Failed to load project from /workspace/helloworldscala/.bloop/helloworldscala.json
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	bloop.data.Project$.fromBytesAndOrigin(Project.scala:280)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	bloop.engine.BuildLoader$.loadProject(BuildLoader.scala:256)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	bloop.engine.BuildLoader$.$anonfun$loadBuildIncrementally$3(BuildLoader.scala:60)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	monix.eval.internal.TaskRunLoop$.monix$eval$internal$TaskRunLoop$$loop$1(TaskRunLoop.scala:187)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	monix.eval.internal.TaskRunLoop$RestartCallback$1.onSuccess(TaskRunLoop.scala:119)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	monix.eval.Task$.$anonfun$forkedUnit$2(Task.scala:1463)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	java.base/java.lang.Thread.run(Thread.java:829)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m Caused by: java.nio.file.NoSuchFileException: /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.jar
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:149)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	java.base/sun.nio.fs.LinuxFileSystemProvider.readAttributes(LinuxFileSystemProvider.java:99)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	java.base/java.nio.file.Files.readAttributes(Files.java:1764)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	bloop.ScalaInstance.$anonfun$hashCode$1(ScalaInstance.scala:82)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:286)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	scala.collection.mutable.WrappedArray.foreach(WrappedArray.scala:38)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	scala.collection.TraversableLike.map(TraversableLike.scala:286)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	scala.collection.TraversableLike.map$(TraversableLike.scala:279)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	scala.collection.AbstractTraversable.map(Traversable.scala:108)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	bloop.ScalaInstance.<init>(ScalaInstance.scala:78)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	bloop.ScalaInstance$.newInstance$1(ScalaInstance.scala:152)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	bloop.ScalaInstance$.$anonfun$apply$7(ScalaInstance.scala:157)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1705)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	bloop.ScalaInstance$.apply(ScalaInstance.scala:157)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	bloop.data.Project$.$anonfun$fromConfig$1(Project.scala:297)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	scala.Option.flatMap(Option.scala:271)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	bloop.data.Project$.fromConfig(Project.scala:292)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	bloop.data.Project$.fromBytesAndOrigin(Project.scala:274)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	bloop.engine.BuildLoader$.loadProject(BuildLoader.scala:256)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	bloop.engine.BuildLoader$.$anonfun$loadBuildIncrementally$3(BuildLoader.scala:60)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	monix.eval.internal.TaskRunLoop$.monix$eval$internal$TaskRunLoop$$loop$1(TaskRunLoop.scala:187)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	monix.eval.internal.TaskRunLoop$RestartCallback$1.onSuccess(TaskRunLoop.scala:119)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	monix.eval.Task$.$anonfun$forkedUnit$2(Task.scala:1463)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	java.base/java.lang.Thread.run(Thread.java:829)
+2022.02.02 08:29:01 ERROR error: Trying a tcp-based connection to the server instead...
+2022.02.02 08:29:01 ERROR Opening a bsp server connection with 'bsp --protocol tcp --port 31368'...
+2022.02.02 08:29:01 ERROR Waiting for the bsp connection to come up...
+2022.02.02 08:29:01 ERROR error: The command bsp --protocol tcp --port 31368 returned with an error
+2022.02.02 08:29:01 ERROR > [0m[32m[D][0m Loading workspace settings from bloop.settings.json
+2022.02.02 08:29:01 ERROR > [0m[32m[D][0m Loading 2 projects from '/workspace/helloworldscala/.bloop'...
+2022.02.02 08:29:01 ERROR > [0m[32m[D][0m Loading project from '/workspace/helloworldscala/.bloop/helloworldscala-test.json'
+2022.02.02 08:29:01 ERROR > [0m[32m[D][0m Loading project from '/workspace/helloworldscala/.bloop/helloworldscala.json'
+2022.02.02 08:29:01 ERROR > [0m[33m[W][0m Scala instance jar /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.jar doesn't exist!
+2022.02.02 08:29:01 ERROR > [0m[33m[W][0m Scala instance jar /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.3/scala-compiler-2.13.3.jar doesn't exist!
+2022.02.02 08:29:01 ERROR > [0m[33m[W][0m Scala instance jar /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.jar doesn't exist!
+2022.02.02 08:29:01 ERROR > [0m[33m[W][0m Scala instance jar /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.3/scala-reflect-2.13.3.jar doesn't exist!
+2022.02.02 08:29:01 ERROR > [0m[33m[W][0m Scala instance jar /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.3/scala-compiler-2.13.3.jar doesn't exist!
+2022.02.02 08:29:01 ERROR > [0m[33m[W][0m Scala instance jar /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.15.0/jline-3.15.0.jar doesn't exist!
+2022.02.02 08:29:01 ERROR > [0m[33m[W][0m Scala instance jar /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.3/scala-reflect-2.13.3.jar doesn't exist!
+2022.02.02 08:29:01 ERROR > [0m[33m[W][0m Scala instance jar /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar doesn't exist!
+2022.02.02 08:29:01 ERROR > [0m[33m[W][0m Scala instance jar /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.15.0/jline-3.15.0.jar doesn't exist!
+2022.02.02 08:29:01 ERROR > [0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.13.3.
+2022.02.02 08:29:01 ERROR > [0m[33m[W][0m Scala instance jar /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar doesn't exist!
+2022.02.02 08:29:01 ERROR > [0m[32m[D][0m   => /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar
+2022.02.02 08:29:01 ERROR > [0m[32m[D][0m   => /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.15.0/jline-3.15.0.jar
+2022.02.02 08:29:01 ERROR > [0m[32m[D][0m   => /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.3/scala-compiler-2.13.3.jar
+2022.02.02 08:29:01 ERROR > [0m[32m[D][0m   => /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.jar
+2022.02.02 08:29:01 ERROR > [0m[32m[D][0m   => /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.3/scala-reflect-2.13.3.jar
+2022.02.02 08:29:01 ERROR > [0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.13.3.
+2022.02.02 08:29:01 ERROR > [0m[32m[D][0m   => /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar
+2022.02.02 08:29:01 ERROR > [0m[32m[D][0m   => /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.15.0/jline-3.15.0.jar
+2022.02.02 08:29:01 ERROR > [0m[32m[D][0m   => /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.3/scala-compiler-2.13.3.jar
+2022.02.02 08:29:01 ERROR > [0m[32m[D][0m   => /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.jar
+2022.02.02 08:29:01 ERROR > [0m[32m[D][0m   => /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.3/scala-reflect-2.13.3.jar
+2022.02.02 08:29:01 ERROR > [0m[32m[D][0m Elapsed: 6.29993 ms
+2022.02.02 08:29:01 ERROR > [0m[31m[E][0m Failed to load project from /workspace/helloworldscala/.bloop/helloworldscala-test.json
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m bloop.data.Project$ProjectReadException: Failed to load project from /workspace/helloworldscala/.bloop/helloworldscala-test.json
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	bloop.data.Project$.fromBytesAndOrigin(Project.scala:280)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	bloop.engine.BuildLoader$.loadProject(BuildLoader.scala:256)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	bloop.engine.BuildLoader$.$anonfun$loadBuildIncrementally$3(BuildLoader.scala:60)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	monix.eval.internal.TaskRunLoop$.monix$eval$internal$TaskRunLoop$$loop$1(TaskRunLoop.scala:187)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	monix.eval.internal.TaskRunLoop$RestartCallback$1.onSuccess(TaskRunLoop.scala:119)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	monix.eval.Task$.$anonfun$forkedUnit$2(Task.scala:1463)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	java.base/java.lang.Thread.run(Thread.java:829)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m Caused by: java.nio.file.NoSuchFileException: /home/gitpod/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.jar
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:149)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	java.base/sun.nio.fs.LinuxFileSystemProvider.readAttributes(LinuxFileSystemProvider.java:99)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	java.base/java.nio.file.Files.readAttributes(Files.java:1764)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	bloop.ScalaInstance.$anonfun$hashCode$1(ScalaInstance.scala:82)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:286)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	scala.collection.mutable.WrappedArray.foreach(WrappedArray.scala:38)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	scala.collection.TraversableLike.map(TraversableLike.scala:286)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	scala.collection.TraversableLike.map$(TraversableLike.scala:279)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	scala.collection.AbstractTraversable.map(Traversable.scala:108)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	bloop.ScalaInstance.<init>(ScalaInstance.scala:78)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	bloop.ScalaInstance$.newInstance$1(ScalaInstance.scala:152)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	bloop.ScalaInstance$.$anonfun$apply$7(ScalaInstance.scala:157)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1705)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	bloop.ScalaInstance$.apply(ScalaInstance.scala:157)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	bloop.data.Project$.$anonfun$fromConfig$1(Project.scala:297)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	scala.Option.flatMap(Option.scala:271)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	bloop.data.Project$.fromConfig(Project.scala:292)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	bloop.data.Project$.fromBytesAndOrigin(Project.scala:274)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	bloop.engine.BuildLoader$.loadProject(BuildLoader.scala:256)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	bloop.engine.BuildLoader$.$anonfun$loadBuildIncrementally$3(BuildLoader.scala:60)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	monix.eval.internal.TaskRunLoop$.monix$eval$internal$TaskRunLoop$$loop$1(TaskRunLoop.scala:187)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	monix.eval.internal.TaskRunLoop$RestartCallback$1.onSuccess(TaskRunLoop.scala:119)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	monix.eval.Task$.$anonfun$forkedUnit$2(Task.scala:1463)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+2022.02.02 08:29:01 ERROR > [0m[36m[T][0m 	java.base/java.lang.Thread.run(Thread.java:829)
+2022.02.02 08:29:01 ERROR error: The launcher failed to establish a bsp connection, aborting...
+2022.02.02 08:29:01 ERROR Failed to connect with build server, no functionality will work.
+java.lang.RuntimeException: The server did not start, got FailedToOpenBspConnection
+	at bloop.launcher.LauncherMain.failPromise$1(Launcher.scala:95)
+	at bloop.launcher.LauncherMain.runLauncher(Launcher.scala:122)
+	at scala.meta.internal.metals.BloopServers$$anon$2.run(BloopServers.scala:169)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+
