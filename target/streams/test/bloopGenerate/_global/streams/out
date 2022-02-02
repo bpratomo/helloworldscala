@@ -1,4 +1,0 @@
-[debug] [helloworldscala-test] Classpath dependencies List()
-[debug] [helloworldscala-test] Dependencies from configurations List(helloworldscala)
-[debug] Bloop wrote the configuration of project 'helloworldscala-test' to '/workspace/helloworldscala/.bloop/helloworldscala-test.json'
-[success] Generated .bloop/helloworldscala-test.json
