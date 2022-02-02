@@ -1,4 +1,4 @@
-[debug] [hello-world-build] Classpath dependencies List()
-[debug] [hello-world-build] Dependencies from configurations List()
-[debug] Bloop wrote the configuration of project 'hello-world-build' to '/home/budi/experiments/hello-world/project/.bloop/hello-world-build.json'
-[success] Generated .bloop/hello-world-build.json
+[debug] [helloworldscala-build] Classpath dependencies List()
+[debug] [helloworldscala-build] Dependencies from configurations List()
+[debug] Bloop wrote the configuration of project 'helloworldscala-build' to '/workspace/helloworldscala/project/.bloop/helloworldscala-build.json'
+[success] Generated .bloop/helloworldscala-build.json
