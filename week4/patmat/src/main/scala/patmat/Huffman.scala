@@ -75,8 +75,8 @@ trait Huffman extends HuffmanInterface:
     def update(c:Char,acc:List[(Char,Int)]):List[(Char,Int)] = 
       acc match {
         case Nil => List((c,1)) 
-        case (c,x) :: tail if c==c => (c,x+1) ::tail
-        case (a,x) :: tail => (a,x) :: update(c,tail)
+        case (h,x) :: tail if h==c => (h,x+1) ::tail
+        case (a,y) :: tail if a!=c => (a,y) :: update(c,tail)
 
       }
 
