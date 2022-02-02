@@ -1,0 +1,511 @@
+[0m2022.02.02 08:06:04 INFO  Started: Metals version 0.10.8 in workspace '/home/budi/experiments/hello-world' for client code-server 1.60.0.[0m
+[0m2022.02.02 08:06:06 INFO  time: initialize in 2.41s[0m
+[0m2022.02.02 08:06:07 WARN  Build server is not auto-connectable.[0m
+[0m2022.02.02 08:06:16 INFO  running '/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals9249252990820526976/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2022.02.02 08:06:17 WARN  no build target for: /home/budi/experiments/hello-world/project/metals.sbt[0m
+[0m2022.02.02 08:06:17 WARN  no build target for: /home/budi/experiments/hello-world/project/project/metals.sbt[0m
+[0m2022.02.02 08:06:17 INFO  skipping build import with status 'Started'[0m
+[0m2022.02.02 08:06:17 INFO  no build target: using presentation compiler with only scala-library: 3.1.0[0m
+[0m2022.02.02 08:06:22 INFO  [info] welcome to sbt 1.6.1 (Debian Java 11.0.14)[0m
+[0m2022.02.02 08:06:30 INFO  [info] loading settings for project hello-world-build-build from metals.sbt ...[0m
+[0m2022.02.02 08:06:31 INFO  [info] loading project definition from /home/budi/experiments/hello-world/project/project[0m
+[0m2022.02.02 08:06:36 INFO  [info] loading settings for project hello-world-build from metals.sbt ...[0m
+[0m2022.02.02 08:06:36 INFO  [info] loading project definition from /home/budi/experiments/hello-world/project[0m
+[0m2022.02.02 08:06:42 INFO  [success] Generated .bloop/hello-world-build.json[0m
+[0m2022.02.02 08:06:42 INFO  [success] Total time: 6 s, completed Feb 2, 2022, 8:06:43 AM[0m
+[0m2022.02.02 08:06:46 INFO  [info] loading settings for project hello-world from build.sbt ...[0m
+[0m2022.02.02 08:06:46 INFO  [info] set current project to hello-world (in build file:/home/budi/experiments/hello-world/)[0m
+[0m2022.02.02 08:06:49 INFO  [success] Generated .bloop/hello-world.json[0m
+[0m2022.02.02 08:06:49 INFO  [success] Generated .bloop/hello-world-test.json[0m
+[0m2022.02.02 08:06:49 INFO  [success] Total time: 2 s, completed Feb 2, 2022, 8:06:49 AM[0m
+[0m2022.02.02 08:06:49 INFO  time: ran 'sbt bloopInstall' in 32s[0m
+[0m2022.02.02 08:06:49 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher10667881488604690451/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading 2 projects from '/home/budi/experiments/hello-world/.bloop'...
+[0m[32m[D][0m Loading project from '/home/budi/experiments/hello-world/.bloop/hello-world-test.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.13.3.
+[0m[32m[D][0m   => /home/budi/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar
+[0m[32m[D][0m   => /home/budi/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.15.0/jline-3.15.0.jar
+[0m[32m[D][0m   => /home/budi/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.3/scala-compiler-2.13.3.jar
+[0m[32m[D][0m   => /home/budi/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.3/scala-library-2.13.3.jar
+[0m[32m[D][0m   => /home/budi/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.3/scala-reflect-2.13.3.jar
+[0m[32m[D][0m Loading project from '/home/budi/experiments/hello-world/.bloop/hello-world.json'
+[0m[32m[D][0m Missing analysis file for project 'hello-world'
+[0m[32m[D][0m Missing analysis file for project 'hello-world-test'
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher10667881488604690451/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher10667881488604690451/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2022.02.02 08:06:49 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/budi/.cache/metals/bsp.trace.json[0m
+[0m2022.02.02 08:06:52 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher16861022287404294485/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher16861022287404294485/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher16861022287404294485/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2022.02.02 08:06:52 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/budi/.cache/metals/bsp.trace.json[0m
+[0m2022.02.02 08:06:52 INFO  time: Connected to build server in 3.78s[0m
+[0m2022.02.02 08:06:52 INFO  Connected to Build server: Bloop v1.4.10-8-8d1cbc4f[0m
+[0m2022.02.02 08:06:53 INFO  time: Imported build in 0.11s[0m
+[0m2022.02.02 08:06:55 INFO  Disconnecting from Bloop session...[0m
+[0m2022.02.02 08:06:55 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2022.02.02 08:06:55 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2022.02.02 08:06:55 ERROR Failed to connect with build server, no functionality will work.
+java.lang.NullPointerException
+	at scala.meta.internal.mtags.CommonMtagsEnrichments$XtensionPathMetals.filename(CommonMtagsEnrichments.scala:260)
+	at scala.meta.internal.mtags.CommonMtagsEnrichments$XtensionAbsolutePath.filename(CommonMtagsEnrichments.scala:393)
+	at scala.meta.internal.metals.JdkSources$.isJdkCandidate$1(JdkSources.scala:33)
+	at scala.meta.internal.metals.JdkSources$.$anonfun$candidates$2(JdkSources.scala:41)
+	at scala.collection.immutable.List.map(List.scala:293)
+	at scala.meta.internal.metals.JdkSources$.candidates(JdkSources.scala:38)
+	at scala.meta.internal.metals.JdkSources$.apply(JdkSources.scala:18)
+	at scala.meta.internal.metals.MetalsLanguageServer.indexDependencySources(MetalsLanguageServer.scala:2438)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$indexWorkspace$10(MetalsLanguageServer.scala:2395)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.indexWorkspace(MetalsLanguageServer.scala:2395)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$profiledIndexWorkspace$2(MetalsLanguageServer.scala:2288)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$profiledIndexWorkspace$1(MetalsLanguageServer.scala:2288)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+[0m2022.02.02 08:06:55 INFO  no build target: using presentation compiler with only scala-library: 2.13.3[0m
+[0m2022.02.02 08:41:56 INFO  shutting down Metals[0m
+[0m2022.02.02 08:42:09 INFO  Started: Metals version 0.10.8 in workspace '/home/budi/experiments/hello-world' for client code-server 1.60.0.[0m
+[0m2022.02.02 08:42:11 INFO  time: initialize in 2.76s[0m
+[0m2022.02.02 08:42:12 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher7767673891489384722/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2022.02.02 08:42:13 INFO  skipping build import with status 'Installed'[0m
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher7767673891489384722/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher7767673891489384722/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2022.02.02 08:42:12 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/budi/.cache/metals/bsp.trace.json[0m
+[0m2022.02.02 08:42:12 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher483575077876705303/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher483575077876705303/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher483575077876705303/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2022.02.02 08:42:12 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/budi/.cache/metals/bsp.trace.json[0m
+[0m2022.02.02 08:42:13 INFO  time: Connected to build server in 1.03s[0m
+[0m2022.02.02 08:42:13 INFO  Connected to Build server: Bloop v1.4.10-8-8d1cbc4f[0m
+[0m2022.02.02 08:42:13 INFO  time: Imported build in 0.14s[0m
+[0m2022.02.02 08:42:17 INFO  Disconnecting from Bloop session...[0m
+[0m2022.02.02 08:42:17 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2022.02.02 08:42:17 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+[0m2022.02.02 08:42:17 ERROR Failed to connect with build server, no functionality will work.
+java.lang.NullPointerException
+	at scala.meta.internal.mtags.CommonMtagsEnrichments$XtensionPathMetals.filename(CommonMtagsEnrichments.scala:260)
+	at scala.meta.internal.mtags.CommonMtagsEnrichments$XtensionAbsolutePath.filename(CommonMtagsEnrichments.scala:393)
+	at scala.meta.internal.metals.JdkSources$.isJdkCandidate$1(JdkSources.scala:33)
+	at scala.meta.internal.metals.JdkSources$.$anonfun$candidates$2(JdkSources.scala:41)
+	at scala.collection.immutable.List.map(List.scala:293)
+	at scala.meta.internal.metals.JdkSources$.candidates(JdkSources.scala:38)
+	at scala.meta.internal.metals.JdkSources$.apply(JdkSources.scala:18)
+	at scala.meta.internal.metals.MetalsLanguageServer.indexDependencySources(MetalsLanguageServer.scala:2438)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$indexWorkspace$10(MetalsLanguageServer.scala:2395)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.indexWorkspace(MetalsLanguageServer.scala:2395)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$profiledIndexWorkspace$2(MetalsLanguageServer.scala:2288)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$profiledIndexWorkspace$1(MetalsLanguageServer.scala:2288)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+[0m2022.02.02 08:42:17 INFO  no build target: using presentation compiler with only scala-library: 2.13.3[0m
+Feb 02, 2022 8:43:28 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Feb 02, 2022 8:43:28 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+[0m2022.02.02 08:43:35 INFO  shutting down Metals[0m
+[0m2022.02.02 08:43:49 INFO  Started: Metals version 0.10.8 in workspace '/home/budi/experiments/hello-world' for client code-server 1.60.0.[0m
+[0m2022.02.02 08:43:52 INFO  time: initialize in 2.73s[0m
+[0m2022.02.02 08:43:53 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher1615814196373284696/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2022.02.02 08:43:54 INFO  skipping build import with status 'Installed'[0m
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher1615814196373284696/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher1615814196373284696/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2022.02.02 08:43:54 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/budi/.cache/metals/bsp.trace.json[0m
+[0m2022.02.02 08:43:54 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher15119889644996177825/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher15119889644996177825/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher15119889644996177825/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2022.02.02 08:43:54 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/budi/.cache/metals/bsp.trace.json[0m
+[0m2022.02.02 08:43:54 INFO  time: Connected to build server in 1.62s[0m
+[0m2022.02.02 08:43:54 INFO  Connected to Build server: Bloop v1.4.10-8-8d1cbc4f[0m
+[0m2022.02.02 08:43:55 INFO  time: Imported build in 0.14s[0m
+[0m2022.02.02 08:44:01 INFO  Disconnecting from Bloop session...[0m
+[0m2022.02.02 08:44:01 ERROR Failed to connect with build server, no functionality will work.
+java.lang.NullPointerException
+	at scala.meta.internal.mtags.CommonMtagsEnrichments$XtensionPathMetals.filename(CommonMtagsEnrichments.scala:260)
+	at scala.meta.internal.mtags.CommonMtagsEnrichments$XtensionAbsolutePath.filename(CommonMtagsEnrichments.scala:393)
+	at scala.meta.internal.metals.JdkSources$.isJdkCandidate$1(JdkSources.scala:33)
+	at scala.meta.internal.metals.JdkSources$.$anonfun$candidates$2(JdkSources.scala:41)
+	at scala.collection.immutable.List.map(List.scala:293)
+	at scala.meta.internal.metals.JdkSources$.candidates(JdkSources.scala:38)
+	at scala.meta.internal.metals.JdkSources$.apply(JdkSources.scala:18)
+	at scala.meta.internal.metals.MetalsLanguageServer.indexDependencySources(MetalsLanguageServer.scala:2438)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$indexWorkspace$10(MetalsLanguageServer.scala:2395)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.indexWorkspace(MetalsLanguageServer.scala:2395)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$profiledIndexWorkspace$2(MetalsLanguageServer.scala:2288)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$profiledIndexWorkspace$1(MetalsLanguageServer.scala:2288)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+[0m2022.02.02 08:44:01 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2022.02.02 08:44:01 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+[0m2022.02.02 08:44:01 INFO  no build target: using presentation compiler with only scala-library: 2.13.3[0m
+[0m2022.02.02 08:49:44 INFO  shutting down Metals[0m
+[0m2022.02.02 08:49:56 INFO  Started: Metals version 0.10.8 in workspace '/home/budi/experiments/hello-world' for client code-server 1.60.0.[0m
+[0m2022.02.02 08:49:59 INFO  time: initialize in 2.73s[0m
+[0m2022.02.02 08:50:00 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher15703267195459149154/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2022.02.02 08:50:00 INFO  skipping build import with status 'Installed'[0m
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher15703267195459149154/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher15703267195459149154/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2022.02.02 08:50:00 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/budi/.cache/metals/bsp.trace.json[0m
+[0m2022.02.02 08:50:01 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher11129771941394720510/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher11129771941394720510/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher11129771941394720510/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2022.02.02 08:50:01 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/budi/.cache/metals/bsp.trace.json[0m
+[0m2022.02.02 08:50:01 INFO  time: Connected to build server in 1s[0m
+[0m2022.02.02 08:50:01 INFO  Connected to Build server: Bloop v1.4.10-8-8d1cbc4f[0m
+[0m2022.02.02 08:50:01 INFO  time: Imported build in 0.18s[0m
+[0m2022.02.02 08:50:06 INFO  Disconnecting from Bloop session...[0m
+[0m2022.02.02 08:50:06 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+[0m2022.02.02 08:50:06 ERROR Failed to connect with build server, no functionality will work.
+java.lang.NullPointerException
+	at scala.meta.internal.mtags.CommonMtagsEnrichments$XtensionPathMetals.filename(CommonMtagsEnrichments.scala:260)
+	at scala.meta.internal.mtags.CommonMtagsEnrichments$XtensionAbsolutePath.filename(CommonMtagsEnrichments.scala:393)
+	at scala.meta.internal.metals.JdkSources$.isJdkCandidate$1(JdkSources.scala:33)
+	at scala.meta.internal.metals.JdkSources$.$anonfun$candidates$2(JdkSources.scala:41)
+	at scala.collection.immutable.List.map(List.scala:293)
+	at scala.meta.internal.metals.JdkSources$.candidates(JdkSources.scala:38)
+	at scala.meta.internal.metals.JdkSources$.apply(JdkSources.scala:18)
+	at scala.meta.internal.metals.MetalsLanguageServer.indexDependencySources(MetalsLanguageServer.scala:2438)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$indexWorkspace$10(MetalsLanguageServer.scala:2395)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.indexWorkspace(MetalsLanguageServer.scala:2395)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$profiledIndexWorkspace$2(MetalsLanguageServer.scala:2288)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$profiledIndexWorkspace$1(MetalsLanguageServer.scala:2288)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+[0m2022.02.02 08:50:06 INFO  Shut down connection with build server.[0m
+No more data in the server stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2022.02.02 08:50:06 INFO  no build target: using presentation compiler with only scala-library: 2.13.3[0m
+[0m2022.02.02 08:52:41 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher10049147786325214026/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher10049147786325214026/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher10049147786325214026/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2022.02.02 08:52:41 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/budi/.cache/metals/bsp.trace.json[0m
+[0m2022.02.02 08:52:41 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher18044283841458178048/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher18044283841458178048/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher18044283841458178048/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2022.02.02 08:52:41 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/budi/.cache/metals/bsp.trace.json[0m
+[0m2022.02.02 08:52:41 INFO  time: Connected to build server in 0.21s[0m
+[0m2022.02.02 08:52:41 INFO  Connected to Build server: Bloop v1.4.10-8-8d1cbc4f[0m
+[0m2022.02.02 08:52:43 INFO  Disconnecting from Bloop session...[0m
+[0m2022.02.02 08:52:43 ERROR Failed to connect with build server, no functionality will work.
+java.lang.NullPointerException
+	at scala.meta.internal.mtags.CommonMtagsEnrichments$XtensionPathMetals.filename(CommonMtagsEnrichments.scala:260)
+	at scala.meta.internal.mtags.CommonMtagsEnrichments$XtensionAbsolutePath.filename(CommonMtagsEnrichments.scala:393)
+	at scala.meta.internal.metals.JdkSources$.isJdkCandidate$1(JdkSources.scala:33)
+	at scala.meta.internal.metals.JdkSources$.$anonfun$candidates$2(JdkSources.scala:41)
+	at scala.collection.immutable.List.map(List.scala:293)
+	at scala.meta.internal.metals.JdkSources$.candidates(JdkSources.scala:38)
+	at scala.meta.internal.metals.JdkSources$.apply(JdkSources.scala:18)
+	at scala.meta.internal.metals.MetalsLanguageServer.indexDependencySources(MetalsLanguageServer.scala:2438)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$indexWorkspace$10(MetalsLanguageServer.scala:2395)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.indexWorkspace(MetalsLanguageServer.scala:2395)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$profiledIndexWorkspace$2(MetalsLanguageServer.scala:2288)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$profiledIndexWorkspace$1(MetalsLanguageServer.scala:2288)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+[0m2022.02.02 08:52:43 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2022.02.02 08:52:43 INFO  Shut down connection with build server.[0mNo more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+
+No more data in the client stdin, exiting...
+[0m2022.02.02 08:52:43 INFO  no build target: using presentation compiler with only scala-library: 2.13.3[0m
+[0m2022.02.02 08:52:50 INFO  running '/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals7574748951400592510/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2022.02.02 08:52:51 INFO  running '/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals9286409218122227758/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2022.02.02 08:52:54 INFO  [info] welcome to sbt 1.6.1 (Debian Java 11.0.14)[0m
+[0m2022.02.02 08:52:57 INFO  [info] loading settings for project hello-world-build-build from metals.sbt ...[0m
+[0m2022.02.02 08:52:58 INFO  [info] welcome to sbt 1.6.1 (Debian Java 11.0.14)[0m
+[0m2022.02.02 08:53:01 INFO  [info] loading project definition from /home/budi/experiments/hello-world/project/project[0m
+[0m2022.02.02 08:53:02 INFO  [info] loading settings for project hello-world-build-build from metals.sbt ...[0m
+[0m2022.02.02 08:53:04 INFO  [info] loading settings for project hello-world-build from metals.sbt ...[0m
+[0m2022.02.02 08:53:04 INFO  [info] loading project definition from /home/budi/experiments/hello-world/project[0m
+[0m2022.02.02 08:53:06 INFO  [info] loading project definition from /home/budi/experiments/hello-world/project/project[0m
+[0m2022.02.02 08:53:10 INFO  [info] loading settings for project hello-world-build from metals.sbt ...[0m
+[0m2022.02.02 08:53:11 INFO  [info] loading project definition from /home/budi/experiments/hello-world/project[0m
+[0m2022.02.02 08:53:12 ERROR [info] waiting for lock on /home/budi/.ivy2/exclude_classifiers.lock to be available...[0m
+[0m2022.02.02 08:53:13 INFO  [success] Generated .bloop/hello-world-build.json[0m
+[0m2022.02.02 08:53:13 INFO  [success] Total time: 8 s, completed Feb 2, 2022, 8:53:14 AM[0m
+[0m2022.02.02 08:53:15 INFO  [info] loading settings for project hello-world from build.sbt ...[0m
+[0m2022.02.02 08:53:15 INFO  [info] set current project to hello-world (in build file:/home/budi/experiments/hello-world/)[0m
+[0m2022.02.02 08:53:17 INFO  [success] Generated .bloop/hello-world.json[0m
+[0m2022.02.02 08:53:17 INFO  [success] Generated .bloop/hello-world-test.json[0m
+[0m2022.02.02 08:53:17 INFO  [success] Total time: 1 s, completed Feb 2, 2022, 8:53:17 AM[0m
+[0m2022.02.02 08:53:18 INFO  time: ran 'sbt bloopInstall' in 27s[0m
+[0m2022.02.02 08:53:18 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher4050800848752369455/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher4050800848752369455/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher4050800848752369455/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2022.02.02 08:53:18 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/budi/.cache/metals/bsp.trace.json[0m
+[0m2022.02.02 08:53:18 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher8943534763288806962/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher8943534763288806962/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher8943534763288806962/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2022.02.02 08:53:18 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/budi/.cache/metals/bsp.trace.json[0m
+[0m2022.02.02 08:53:18 INFO  time: Connected to build server in 0.54s[0m
+[0m2022.02.02 08:53:18 INFO  Connected to Build server: Bloop v1.4.10-8-8d1cbc4f[0m
+[0m2022.02.02 08:53:18 INFO  time: Imported build in 0.19s[0m
+[0m2022.02.02 08:53:22 INFO  [success] Generated .bloop/hello-world-build.json[0m
+[0m2022.02.02 08:53:22 INFO  [success] Total time: 11 s, completed Feb 2, 2022, 8:53:22 AM[0m
+[0m2022.02.02 08:53:22 INFO  [info] loading settings for project hello-world from build.sbt ...[0m
+[0m2022.02.02 08:53:23 INFO  [info] set current project to hello-world (in build file:/home/budi/experiments/hello-world/)[0m
+[0m2022.02.02 08:53:24 INFO  no build target: using presentation compiler with only scala-library: 2.13.3[0m
+[0m2022.02.02 08:53:24 INFO  Disconnecting from Bloop session...[0m
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2022.02.02 08:53:24 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+[0m2022.02.02 08:53:24 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+[0m2022.02.02 08:53:24 ERROR Failed to connect with build server, no functionality will work.
+java.lang.NullPointerException
+	at scala.meta.internal.mtags.CommonMtagsEnrichments$XtensionPathMetals.filename(CommonMtagsEnrichments.scala:260)
+	at scala.meta.internal.mtags.CommonMtagsEnrichments$XtensionAbsolutePath.filename(CommonMtagsEnrichments.scala:393)
+	at scala.meta.internal.metals.JdkSources$.isJdkCandidate$1(JdkSources.scala:33)
+	at scala.meta.internal.metals.JdkSources$.$anonfun$candidates$2(JdkSources.scala:41)
+	at scala.collection.immutable.List.map(List.scala:293)
+	at scala.meta.internal.metals.JdkSources$.candidates(JdkSources.scala:38)
+	at scala.meta.internal.metals.JdkSources$.apply(JdkSources.scala:18)
+	at scala.meta.internal.metals.MetalsLanguageServer.indexDependencySources(MetalsLanguageServer.scala:2438)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$indexWorkspace$10(MetalsLanguageServer.scala:2395)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.indexWorkspace(MetalsLanguageServer.scala:2395)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$profiledIndexWorkspace$2(MetalsLanguageServer.scala:2288)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$profiledIndexWorkspace$1(MetalsLanguageServer.scala:2288)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2022.02.02 08:53:25 INFO  [success] Generated .bloop/hello-world.json[0m
+[0m2022.02.02 08:53:25 INFO  [success] Generated .bloop/hello-world-test.json[0m
+[0m2022.02.02 08:53:25 INFO  [success] Total time: 1 s, completed Feb 2, 2022, 8:53:25 AM[0m
+[0m2022.02.02 08:53:26 INFO  time: ran 'sbt bloopInstall' in 34s[0m
+[0m2022.02.02 08:53:26 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher8837745851442737617/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher8837745851442737617/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher8837745851442737617/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2022.02.02 08:53:26 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/budi/.cache/metals/bsp.trace.json[0m
+[0m2022.02.02 08:53:26 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher13229668704694401792/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher13229668704694401792/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher13229668704694401792/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2022.02.02 08:53:26 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/budi/.cache/metals/bsp.trace.json[0m
+[0m2022.02.02 08:53:26 INFO  time: Connected to build server in 0.15s[0m
+[0m2022.02.02 08:53:26 INFO  Connected to Build server: Bloop v1.4.10-8-8d1cbc4f[0m
+[0m2022.02.02 08:53:28 INFO  no build target: using presentation compiler with only scala-library: 2.13.3[0m
+[0m2022.02.02 08:53:28 INFO  Disconnecting from Bloop session...[0m
+[0m2022.02.02 08:53:28 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+[0m2022.02.02 08:53:28 INFO  Shut down connection with build server.[0m
+[0m2022.02.02 08:53:28 ERROR Failed to connect with build server, no functionality will work.
+java.lang.NullPointerException
+	at scala.meta.internal.mtags.CommonMtagsEnrichments$XtensionPathMetals.filename(CommonMtagsEnrichments.scala:260)
+	at scala.meta.internal.mtags.CommonMtagsEnrichments$XtensionAbsolutePath.filename(CommonMtagsEnrichments.scala:393)
+	at scala.meta.internal.metals.JdkSources$.isJdkCandidate$1(JdkSources.scala:33)
+	at scala.meta.internal.metals.JdkSources$.$anonfun$candidates$2(JdkSources.scala:41)
+	at scala.collection.immutable.List.map(List.scala:293)
+	at scala.meta.internal.metals.JdkSources$.candidates(JdkSources.scala:38)
+	at scala.meta.internal.metals.JdkSources$.apply(JdkSources.scala:18)
+	at scala.meta.internal.metals.MetalsLanguageServer.indexDependencySources(MetalsLanguageServer.scala:2438)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$indexWorkspace$10(MetalsLanguageServer.scala:2395)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.indexWorkspace(MetalsLanguageServer.scala:2395)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$profiledIndexWorkspace$2(MetalsLanguageServer.scala:2288)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$profiledIndexWorkspace$1(MetalsLanguageServer.scala:2288)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the client stdin, exiting...
+[0m2022.02.02 08:54:54 INFO  shutting down Metals[0m
