@@ -78,7 +78,6 @@ trait Huffman extends HuffmanInterface:
 
       }
 
-
     def timesAcc(chars:List[Char],acc:List[(Char,Int)]):List[(Char,Int)] = 
       chars match {
         case Nil => acc
@@ -94,12 +93,40 @@ trait Huffman extends HuffmanInterface:
    * head of the list should have the smallest weight), where the weight
    * of a leaf is the frequency of the character.
    */
-  def makeOrderedLeafList(freqs: List[(Char, Int)]): List[Leaf] = ???
+  def makeOrderedLeafList(freqs: List[(Char, Int)]): List[Leaf] = 
+    def remove(freqs:List[(Char,Int)],c: Char): List[(Char,Int)] = 
+      freqs match {
+        case Nil => Nil 
+        case (c,i) ::tail if c==c => tail
+        case (a,i) :: tail => (a,i) :: remove(tail,c)
+      }
+    
+    def findSmallest(freqs:List[(Char,Int)]):(Char,Int) = 
+      freqs match {
+        case Nil => ('a',Int.MaxValue)
+        case (c,i) :: tail => if i < findSmallest(tail)._2 then (c,i) else findSmallest(tail)
+      }
+
+    def iter(freqs:List[(Char,Int)],acc:List[Leaf]):List[Leaf] = 
+      freqs match {
+        case Nil => acc 
+        case (c,i)::tail => {
+          val smallest = findSmallest(freqs)
+          iter(remove(freqs,smallest._1), acc ::: List(Leaf(smallest._1,smallest._2)))
+        }
+      }
+    iter(freqs,Nil)
+
+
 
   /**
    * Checks whether the list `trees` contains only one single code tree.
    */
-  def singleton(trees: List[CodeTree]): Boolean = ???
+  def singleton(trees: List[CodeTree]): Boolean = 
+    trees.length match {
+      case 1 => true 
+      case _ => false
+    }
 
   /**
    * The parameter `trees` of this function is a list of code trees ordered
