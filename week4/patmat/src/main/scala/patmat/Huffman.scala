@@ -1,5 +1,4 @@
 package patmat
-
 /**
  * A huffman code is represented by a binary tree.
  *
@@ -70,7 +69,23 @@ trait Huffman extends HuffmanInterface:
    *       println("integer is  : "+ theInt)
    *   }
    */
-  def times(chars: List[Char]): List[(Char, Int)] = ???
+  def times(chars: List[Char]): List[(Char, Int)] = 
+    def update(c:Char,acc:List[(Char,Int)]):List[(Char,Int)] = 
+      acc match {
+        case Nil => List((c,1)) 
+        case (c,x) :: tail => (c,x+1) ::tail
+        case (a,x) :: tail => (a,x) :: update(c,tail)
+
+      }
+
+
+    def timesAcc(chars:List[Char],acc:List[(Char,Int)]):List[(Char,Int)] = 
+      chars match {
+        case Nil => acc
+        case x::tail => timesAcc(tail,update(x,acc))
+      }
+    
+    timesAcc(chars,Nil)
 
   /**
    * Returns a list of `Leaf` nodes for a given frequency table `freqs`.
