@@ -76,7 +76,7 @@ trait Huffman extends HuffmanInterface:
       acc match {
         case Nil => List((c,1)) 
         case (h,x) :: tail if h==c => (h,x+1) ::tail
-        case (a,y) :: tail if a!=c => (a,y) :: update(c,tail)
+        case h:: tail => h :: update(c,tail)
 
       }
 
@@ -194,13 +194,14 @@ trait Huffman extends HuffmanInterface:
   def decode(tree: CodeTree, bits: List[Bit]): List[Char] = 
     val root = tree
     def iter(tree:CodeTree,bits:List[Bit]):List[Char] = 
-      if bits.isEmpty then Nil else 
-        (bits.head, tree) match {
-          case (0,Fork(l,r,c,w)) => iter(l,bits) 
-          case (1,Fork(l,r,c,w)) => iter(r,bits)
-          case (_,Leaf(c,w)) => c :: iter(root,bits.tail)
-          case (_,_) => Nil
-        }
+      println(bits)
+      (bits, tree) match {
+        case (0::tail,Fork(l,r,c,w)) => println("case1");iter(l,bits.tail) 
+        case (1::tail,Fork(l,r,c,w)) => println("case2");iter(r,bits.tail)
+        case (Nil,Leaf(c,w)) => println("case4"); c::Nil 
+        case (bits,Leaf(c,w)) => println("case3");c :: iter(root,bits)
+        case (_,_) => Nil
+      }
     iter(root,bits)
   /**
    * A Huffman coding tree for the French language.

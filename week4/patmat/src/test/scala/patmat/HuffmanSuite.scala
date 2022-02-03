@@ -13,6 +13,10 @@ class HuffmanSuite extends munit.FunSuite:
     new TestTrees:
       assertEquals(weight(t1), 5)
   }
+  test("times function (10pts)") {
+    new TestTrees:
+      assertEquals(times("aba".toList),List(('a',2),('b',1)) )
+  }
 
 
   test("chars of a larger tree (10pts)") {
@@ -39,6 +43,10 @@ class HuffmanSuite extends munit.FunSuite:
   test("decode and encode a very short text should be identity (10pts)") {
     new TestTrees:
       assertEquals(decode(t1, encode(t1)("ab".toList)), "ab".toList)
+  }
+
+  test("decode the french secret"){
+    println(decodedSecret.mkString)
   }
 
 
