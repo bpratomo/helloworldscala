@@ -57,6 +57,7 @@ class AnagramsSuite extends munit.FunSuite:
       List(('a', 1), ('b', 2)),
       List(('a', 2), ('b', 2))
     )
+    println(combinations(abba).toSet)
     assertEquals(combinations(abba).toSet, abbacomb.toSet)
   }
 
