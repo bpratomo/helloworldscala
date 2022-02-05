@@ -91,7 +91,8 @@ object Anagrams extends AnagramsInterface:
       for
         (char, count) <- occurrences
         dropOff <- (0 to count)
-        rest <- combinations(subtract(occurrences, List((char, count))))
+        subtracted <- List(subtract(occurrences,List((char,count))).filter((c,i)=> c>char))
+        rest <- combinations(subtracted)
         //_ = {val combined = if dropOff> 0 then (char, dropOff) :: rest else rest;println(combined)}
       yield {if dropOff> 0 then (char, dropOff) :: rest else rest}
     }
