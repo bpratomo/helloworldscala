@@ -45,7 +45,8 @@ object Anagrams extends AnagramsInterface:
 
   /** Converts a sentence into its character occurrence list. */
   def sentenceOccurrences(s: Sentence): Occurrences =
-    wordOccurrences(s.reduce(_.concat(_)))
+    if s.isEmpty then Nil
+    else wordOccurrences(s.reduce(_.concat(_)))
 
   /** The `dictionaryByOccurrences` is a `Map` from different occurrences to a
     * sequence of all the words that have that occurrence count. This map serves
@@ -63,7 +64,9 @@ object Anagrams extends AnagramsInterface:
     * List(('a', 1), ('e', 1), ('t', 1)) -> Seq("ate", "eat", "tea")
     */
   lazy val dictionaryByOccurrences: Map[Occurrences, List[Word]] =
-    dictionary.groupBy(element => wordOccurrences(element))
+    dictionary
+      .groupBy(element => wordOccurrences(element))
+      .withDefaultValue(Nil)
 
   /** Returns all the anagrams of a given word. */
   def wordAnagrams(word: Word): List[Word] = dictionaryByOccurrences(
@@ -91,10 +94,11 @@ object Anagrams extends AnagramsInterface:
       for
         (char, count) <- occurrences
         dropOff <- (0 to count)
-        subtracted <- List(subtract(occurrences,List((char,count))).filter((c,i)=> c>char))
+        subtracted <- List(
+          subtract(occurrences, List((char, count))).filter((c, i) => c > char)
+        )
         rest <- combinations(subtracted)
-        //_ = {val combined = if dropOff> 0 then (char, dropOff) :: rest else rest;println(combined)}
-      yield {if dropOff> 0 then (char, dropOff) :: rest else rest}
+      yield { if dropOff > 0 then (char, dropOff) :: rest else rest }
     }
 
   //List(List(('a',1)))
@@ -109,15 +113,18 @@ object Anagrams extends AnagramsInterface:
     * no zero-entries.
     */
   def subtract(x: Occurrences, y: Occurrences): Occurrences =
-    val rawSub =
-      (
-        for
-          (char, count) <- x
-          (ychar, ycount) <- y
-        yield if ychar == char then (char, count - ycount) else (char, count)
-      )
+    if y.isEmpty || x.isEmpty then x 
+    else 
+      val (ychar,ycount) = y.head
+      val newX = 
+        for 
+          (char,count) <- x
+        yield if char ==ychar then (char,count-ycount) else (char,count)
+      
+      val filtered = newX.filter((char,count)=>count>0)
+      subtract(filtered,y.tail)
 
-    rawSub.filter((char, count) => count > 0)
+    
 
   /** Returns a list of all anagram sentences of the given sentence.
     *
@@ -153,7 +160,24 @@ object Anagrams extends AnagramsInterface:
     *
     * Note: There is only one anagram of an empty sentence.
     */
-  def sentenceAnagrams(sentence: Sentence): List[Sentence] = ???
+  def sentenceAnagrams(sentence: Sentence): List[Sentence] =
+    if sentence.isEmpty then List(Nil)
+    else
+      def genSentence(socc: Occurrences): List[Sentence] =
+        println(socc)
+        if socc.isEmpty then List(Nil)
+        else
+          for
+            occ <- combinations(socc).filter(occ => !occ.isEmpty)
+            word <- { dictionaryByOccurrences(occ) }
+            rest <- {
+              val subtracted = subtract(socc, occ).toSet.toList;
+              println(s"subtracted is $subtracted and occ is $occ"); 
+              genSentence(subtracted)
+            }
+          yield word :: rest
+      val socc = sentenceOccurrences(sentence)
+      genSentence(socc)
 
 object Dictionary:
   def loadDictionary: List[String] =

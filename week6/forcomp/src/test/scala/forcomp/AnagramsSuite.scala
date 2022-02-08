@@ -34,9 +34,15 @@ class AnagramsSuite extends munit.FunSuite:
 
   test("subtract: lard - r (10pts)") {
     val lard = List(('a', 1), ('d', 1), ('l', 1), ('r', 1))
-    val r = List(('r', 1))
-    val lad = List(('a', 1), ('d', 1), ('l', 1))
+    val r = List(('r', 1),('a',1))
+    val lad = List(('d', 1), ('l', 1))
+
+    val sentence = List("Linux", "rulez")
+    val socc = sentenceOccurrences(sentence)
+    val occ = List(('n',1), ('u',1))
+
     assertEquals(subtract(lard, r), lad)
+    println(subtract(socc,occ))
   }
 
 
@@ -57,7 +63,6 @@ class AnagramsSuite extends munit.FunSuite:
       List(('a', 1), ('b', 2)),
       List(('a', 2), ('b', 2))
     )
-    println(combinations(abba).toSet)
     assertEquals(combinations(abba).toSet, abbacomb.toSet)
   }
 
@@ -69,6 +74,7 @@ class AnagramsSuite extends munit.FunSuite:
 
   test("sentence anagrams: Linux rulez (10pts)") {
     val sentence = List("Linux", "rulez")
+    val test = List("ab")
     val anas = List(
       List("Rex", "Lin", "Zulu"),
       List("nil", "Zulu", "Rex"),
@@ -91,6 +97,8 @@ class AnagramsSuite extends munit.FunSuite:
       List("rulez", "Linux"),
       List("Linux", "rulez")
     )
+    val result = sentenceAnagrams(sentence).toSet
+    println(s"result is $result")
     assertEquals(sentenceAnagrams(sentence).toSet, anas.toSet)
   }
 
