@@ -1,0 +1,9 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(submit, Some(3facf6b6-8b67-4b3e-a3dc-3744c8c16b78), Some(CommandSource(console0)))[0m
+[0m[[0m[31merror[0m] [0m[0mNot a valid command: submit (similar: set)[0m
+[0m[[0m[31merror[0m] [0m[0mNot a valid project ID: submit[0m
+[0m[[0m[31merror[0m] [0m[0mExpected ':'[0m
+[0m[[0m[31merror[0m] [0m[0mNot a valid key: submit (similar: bgList)[0m
+[0m[[0m[31merror[0m] [0m[0msubmit[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
