@@ -15,6 +15,15 @@ abstract class QuickCheckHeap extends Properties("Heap") with IntHeap:
   )
   given Arbitrary[H] = Arbitrary(genHeap)
 
+  def getList(h: H, acc: List[Int]): List[Int] =
+      //println(s"h is $h,acc is $acc")
+      if isEmpty(h) then acc
+      else
+        val min = findMin(h)
+        val newAcc = min :: acc
+        getList(deleteMin(h), newAcc)
+
+
   property("gen1") = forAll { (h: H) =>
     val m = if isEmpty(h) then 0 else findMin(h)
     findMin(insert(m, h)) == m
@@ -37,17 +46,25 @@ abstract class QuickCheckHeap extends Properties("Heap") with IntHeap:
 
   }
 
+  property("all elements are melded") = forAll{
+    (h1:H, h2:H) => 
+      val list1 = getList(h1,Nil)
+      val list2 = getList(h2,Nil)
+      val list12 = list1 ++ list2
+
+      val h3 = meld(h1,h2)
+      val list3 = getList(h3,Nil)
+
+      list12.sorted == list3.sorted
+
+
+
+  }
+
   property("minimum is sorted") = forAll { (h: H) =>
     //println("====================================================")
-    def iter(h: H, acc: List[Int]): List[Int] =
-      //println(s"h is $h,acc is $acc")
-      if isEmpty(h) then acc
-      else
-        val min = findMin(h)
-        val newAcc = min :: acc
-        iter(deleteMin(h), newAcc)
 
-    val reversed = iter(h, Nil)
+    val reversed = getList(h, Nil)
     reversed
       .sliding(2)
       .forall(p =>
